@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [regressionn]">
+  <listeners>
+    <listener class-name="org.dbserver.sicredi.simulador.utils.TestListener"/>
+  </listeners>
+  <test name="Allocation tests(failed)">
+    <classes>
+      <class name="org.dbserver.sicredi.simulador.testCases.SimuladorInvestimentoTestCase">
+        <methods>
+          <include name="simuladorDeInvestimento"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dbserver.sicredi.simulador.testCases.SimuladorInvestimentoTestCase -->
+      <class name="org.dbserver.sicredi.simulador.testCases.SimuladorInvestimentoFalhaTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dbserver.sicredi.simulador.testCases.SimuladorInvestimentoFalhaTestCase -->
+    </classes>
+  </test> <!-- Allocation tests(failed) -->
+</suite> <!-- Failed suite [regressionn] -->
